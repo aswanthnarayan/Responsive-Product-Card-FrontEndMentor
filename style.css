@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #f2ebe3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Fraunces,Montserrat;
+    margin: auto;
+}
+.image-section{
+    background-image: url(./images/image-product-mobile.jpg);
+    height:50%;
+    border-radius:5px 5px 0px 0px;
+}
+p,s{
+    color:#6c7289;
+    line-height: 1.6rem;
+    font-family: Montserrat;
+}
+.container{
+    width: 375px;
+    height: 700px;
+    background-color: white;
+    border-radius: 5px;
+}
+.product-details{
+    padding: 20px;
+    height: 50%;
+}
+.product-details>p{
+    margin-bottom: 10px;
+}
+.product-details h1{
+    margin-bottom: 10px;
+    
+}
+.product-details p{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.price{
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.price h2{
+    margin-right: 15px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #3c8067;
+}
+.og-price{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    background-color: #3c8067;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+.btn>img{
+    margin-right: 10px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #3f8d70;
+}
+
+
+@media (min-width:700px){
+    .container{
+        display: flex;
+        min-width: 650px;
+        max-height: 400px;
+        margin: auto;
+    }
+    .image-section{
+        flex: 1; 
+    }
+    .product-details{
+        flex: 1;
+    }
+    .image-section{
+        height: 100%;
+        background-image: url(./images/image-product-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius:5px 0px 0px 5px;
+        
+    }
+    .product-details{
+        padding: 25px;
+    }
+    
+    
+}
